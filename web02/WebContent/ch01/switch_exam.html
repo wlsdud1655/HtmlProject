@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var a=prompt("4개중 선호하는 게임을 입력하세요(검은사막,테라,레이더즈,파판14)","");
+var message="";
+var img="";
+
+switch(a){
+case "검은사막":
+	message="검은사막";
+	img="GS.jpg";
+	break;
+case "테라":
+	message="테라";
+	img="TR.jpg";
+	break;
+case "레이더즈":
+	message="레이더즈";
+	img="RI.jpg";
+	break;
+case "파판14":
+	message="파판14";
+	img="FF.jpg";
+	break;
+	default:
+		alert("(검은사막,테라,레이더즈,파판14)중에 하나를 선택해주세요");
+}
+document.write("<h1>"+message+"</h1>");
+document.write("<img src='../images/"+img+"'/>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

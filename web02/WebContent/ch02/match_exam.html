@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+str = "자바 HTML JavaScript JSP SpringFrame Oracle";
+document.write("원본:"+str+"<br><br>");
+
+result=str.match(/JavaScript/ig);
+document.write("1)match()함수를 써서 - JavaScript 출력 : ");
+document.write(result+"<br>");
+
+result=str.replace("자바","Java");
+document.write("2)replace()함수를 써서 - 자바=>Java 출력 : ");
+document.write(result+"<br>");
+
+array=str.split(" ");
+document.write("3)split()함수를 써서 개행처리하여 문자출력<br>");
+for(var i in array){
+	document.write(array[i]+"<br>");
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

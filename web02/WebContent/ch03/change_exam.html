@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+ function get(){
+	 var val=document.getElementById("ex").innerHTML;
+	 alert(val);
+ }
+ function set(v){
+	 document.getElementById("ex").innerHTML = v;
+ }
+ function changeImage1(){
+	 var img = document.getElementById("image");
+	 img.src = "../images/eby1.jpg";
+	 img.style.width = "250px";
+	 img.style.height = "200px";
+ }
+ function changeImage2(){
+	 var img = document.getElementById("image");
+	 img.src = "../images/eby3.jpg";
+	 img.style.width = "250px";
+	 img.style.height = "200px";
+ }
+ function changeImage3(){
+	 var img = document.getElementById("image");
+	 img.src = "../images/eby4.jpg";
+	 img.style.width = "250px";
+	 img.style.height = "200px";
+	 }
+ function show(){
+	 document.getElementById("image").style.visibility = "visible";
+ }
+ function hide(){
+	 document.getElementById("image").style.visibility = "hidden";
+	 //document.getElementById("image").style.display = "none";//자리영역까지도 사라짐
+ }
+ function sete(){
+	 document.getElementById("image").style.display = "none";
+ }
+ function gete(){
+	 document.getElementById("image").style.display = "inherit";
+ }
+</script>
+<style type="text/css">
+#ex {
+ background-color: blue;
+ font-family: "굴림체";
+ font-size: 50px;
+}
+</style>
+</head>
+<body>
+<div id="ex">에비츄</div>
+<a href="#" onclick="get()">div의 내용</a>
+<a href="#" onclick="set('에비츄 감정표현')">div 변경</a>
+<br>
+<img id="image" src="../images/eby2.jpg" style="width: 250px; height: 200px;">
+<input type="button" value="슬픔" onclick="changeImage1()">
+<input type="button" value="궁금" onclick="changeImage2()">
+<input type="button" value="삐짐" onclick="changeImage3()">
+<input type="button" value="이미지 숨김" onclick="hide()">
+<input type="button" value="이미지 표시" onclick="show()">
+<input type="button" value="이미지 삭제" onclick="sete()">
+<input type="button" value="이미지 재생성" onclick="gete()">
+
+<br>
+
+</body>
+</html>

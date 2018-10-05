@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+#section1 {
+	margin: auto;
+	float: left;
+}
+#section1 .img{
+ width: 1409px;
+}
+.center1{
+	display: inline-block;
+}

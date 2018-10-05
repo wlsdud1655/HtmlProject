@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<script src="../include/jquery-3.3.1.min.js"></script>
+<style type="text/css">
+#page {
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+}
+#header {
+  height: 50px;
+  background-color: yellow;
+}
+#main {
+  width: 600px;
+  float: left;
+  background-color: aqua;
+}
+#sidebar {
+  width: 300px;
+  float: right;
+  background-color: aliceblue;
+}
+#footer {
+  clear: both;
+  background-color: gray;
+}
+
+#footer ul{
+ font-weight: bold;
+ display: inline-block;
+ list-style-type: none;
+ vertical-align: top;
+ color: white;
+}
+#footer .style1{
+ font-size: 1.5em;
+}
+#footer .style2{
+ font-size: 1.2em;
+}
+@media screen and (max-width: 980px) {
+ #page {
+   width: 94%;
+ }
+ #main {
+   width: 65%;
+ }
+ #sidebar {
+   width: 30%;
+ }
+}
+@media screen and (max-width: 700px) {
+  #main {
+    width: auto; /* 가로사이즈 자동조절 */
+    float: none;
+  }
+  #sidebar {
+    width: auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #header {
+    height: auto;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #sidebar {
+    display: none; /* 사이드바가 안보이게 */
+  }
+}
+</style>
+</head>
+<body>
+ <div id="page">
+  <div id="header">
+   <h2>Header</h2>
+  </div>
+  <div id="main">
+   <h2>Main</h2>
+   데스크탑을 위해 디자인된 웹페이지는...데스크탑을 위해 디자인된 웹페이지는...
+   데스크탑을 위해 디자인된 웹페이지는...데스크탑을 위해 디자인된 웹페이지는...
+   데스크탑을 위해 디자인된 웹페이지는...데스크탑을 위해 디자인된 웹페이지는...
+  </div>
+  <div id="sidebar">
+   <h2>Slider</h2>
+   <ul>
+    <li>Flud grids</li>
+    <li>Media Queries</li>
+   </ul>
+  </div>
+  <div id="footer">
+   <ul class="ba1">
+			<li class="style1">BANK</li>
+			<li class="style2">계좌</li>
+			<br>
+			<li>농협 317-6677-6677-11</li>
+			<li>국민 96677-667751</li>
+			<li>우체국 400010-02-890732</li>
+			<li>우리 1005-593-667788</li>
+			<li>예금주 : (주)매료팩토리</li>
+		</ul>
+		<ul class="ba2">
+			<li class="style1">Q/A</li>
+			<li class="style2">고객센터</li>
+			<br>
+			<li>1688-1360</li>
+			<li>WEEK 10:00 ~ 17:00</li>
+			<li>LUNCH 12:00 ~ 13:00</li>
+			<li>- 주말,공휴일은 휴무입니다.</li>
+			<li>- 통화량 폭주로 전화연결이 안 될 경우,</li>
+			<li>게시판에 문의를 남겨주시면</li>
+			<li>빠른처리 해드리겠습니다.</li>
+		</ul>
+		<ul class="ba3">
+			<li class="style1">RETURN</li>
+			<li class="style2">교환 / 반품 정책 확인</li>
+			<br>
+			<li>전북 전주시 덕진구 백제대로 714</li>
+			<li>동전주 우체국 물류센터</li>
+			<li>매료팩토리 앞</li>
+		</ul>
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function winopen(){
+	var dan = document.getElementById("gugudan").value;
+	window.open("gugu_exam.jsp?dan="+dan+"_blank"+"width=350,height=600");
+}
+
+</script>
+</head>
+<body>
+단을 입력하세요
+<input type="text" value="2" id="gugudan" size="10">
+<input type="button" value="팝업창 열기" onclick="winopen()">
+</body>
+</html>

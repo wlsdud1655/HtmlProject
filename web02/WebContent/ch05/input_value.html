@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../include/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#button1").click(function() {
+			var name = $("#name").val();//id가 name인 태그에 입력된 값
+			alert(name);//name출력
+			name = prompt("이름을 입력하세요", "아무개");
+			$("#name").val(name);//태그의 value를 변경
+
+			$("#img1").attr("src", "../images/autumn.jpg");
+			$("#img1").attr({
+				"width" : "300px",
+				"heigth" : "300px"
+			});//이미지 사이즈 변경
+			
+			var img = $("#img1").attr("src");//src속성의 값을 읽음
+			alert(img);
+		});
+	});
+	function check() {
+		var name = document.getElementById("name").value;
+		alert(name);
+	}
+</script>
+</head>
+<body>
+	이름 :
+	<input id="name" type="text" value="">
+	<br>
+	<img id="img1" src="../images/tomato.jpg">
+	<br>
+	<button id="button1">확인</button>
+</body>
+</html>

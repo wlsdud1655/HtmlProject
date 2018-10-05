@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+#section1 {
+	width: 1409px;
+	float : left;
+	margin: auto;
+	text-align: center;
+	float: left;
+}
+#section1 #baguny{
+	margin: auto;
+	border: 3px solid black;
+}
+#baguny .number{
+ text-align: right;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+ function gugusum(){
+	 var num1=document.getElementById("text1").value;
+	 var num2=document.getElementById("text2").value;
+    var hap="";
+	 
+	  hap=(num1+" + "+num2+" = "+(parseInt(num1)+parseInt(num2))+"<br>");
+	  document.getElementById("result1").innerHTML = hap;
+     hap=(num1+" - "+num2+" = "+(parseInt(num1)-parseInt(num2))+"<br>");
+     document.getElementById("result2").innerHTML = hap;
+      hap=(num1+" * "+num2+" = "+(parseInt(num1)*parseInt(num2))+"<br>");
+      document.getElementById("result3").innerHTML = hap;
+      hap=(num1+" / "+num2+" = "+(parseInt(num1)/parseInt(num2))+"<br>");
+      document.getElementById("result4").innerHTML = hap;
+     hap=(num1+" % "+num2+" = "+(parseInt(num1)%parseInt(num2))+"<br>");
+	 document.getElementById("result5").innerHTML = hap;
+ }
+
+</script>
+</head>
+<body>
+<input type="text" id="text1" size="4">
+<input type="text" id="text2" size="4">
+<input type="button" id="button1" value="계산" onclick="gugusum()"><br>
+
+<div id="result1">innerHTML</div>
+<div id="result2">innerHTML</div>
+<div id="result3">innerHTML</div>
+<div id="result4">innerHTML</div>
+<div id="result5">innerHTML</div>
+</body>
+</html>

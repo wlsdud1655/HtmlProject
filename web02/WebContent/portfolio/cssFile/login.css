@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+#section1 {
+	width: 1409px;
+	float: left;
+	margin: auto;
+	font-weight: bolder;
+	font-family: "궁서체";
+	text-align: center;
+}
+
+#section1 .fon {
+	font-size: 3em;
+	color: red;
+}
+
+#section1 .center1 .sile1 {
+	text-decoration: line-through black;
+	color: red;
+}

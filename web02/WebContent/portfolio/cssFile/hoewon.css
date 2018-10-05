@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+#section1 {
+	width: 1409px;
+	float: left;
+	margin: auto;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 1.5em;
+}
+#section1 .button1{
+ float: right;
+}
